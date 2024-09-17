@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер Цветов</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <input type="color" id="color-picker" class="color-picker">
+        <div class="section">
+            <h2>RGB</h2>
+            <div class="controls">
+                <label for="r">R</label>
+                <input type="number" id="r" class="spinbox" min="0" max="255" value="255">
+                <input type="range" id="r-slider" min="0" max="255" value="255">
+            </div>
+            <div class="controls">
+                <label for="g">G</label>
+                <input type="number" id="g" class="spinbox" min="0" max="255" value="255">
+                <input type="range" id="g-slider" min="0" max="255" value="255">
+            </div>
+            <div class="controls">
+                <label for="b">B</label>
+                <input type="number" id="b" class="spinbox" min="0" max="255" value="255">
+                <input type="range" id="b-slider" min="0" max="255" value="255">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>CMYK</h2>
+            <div class="controls">
+                <label for="c">C</label>
+                <input type="number" id="c" class="spinbox" min="0" max="100" value="0">
+                <input type="range" id="c-slider" min="0" max="100" value="0">
+            </div>
+            <div class="controls">
+                <label for="m">M</label>
+                <input type="number" id="m" class="spinbox" min="0" max="100" value="0">
+                <input type="range" id="m-slider" min="0" max="100" value="0">
+            </div>
+            <div class="controls">
+                <label for="y">Y</label>
+                <input type="number" id="y" class="spinbox" min="0" max="100" value="0">
+                <input type="range" id="y-slider" min="0" max="100" value="0">
+            </div>
+            <div class="controls">
+                <label for="k">K</label>
+                <input type="number" id="k" class="spinbox" min="0" max="100" value="0">
+                <input type="range" id="k-slider" min="0" max="100" value="0">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>HSV</h2>
+            <div class="controls">
+                <label for="h">H</label>
+                <input type="number" id="h" class="spinbox" min="0" max="360" value="0">
+                <input type="range" id="h-slider" min="0" max="360" value="0">
+            </div>
+            <div class="controls">
+                <label for="s">S</label>
+                <input type="number" id="s" class="spinbox" min="0" max="100" value="100">
+                <input type="range" id="s-slider" min="0" max="100" value="100">
+            </div>
+            <div class="controls">
+                <label for="v">V</label>
+                <input type="number" id="v" class="spinbox" min="0" max="100" value="100">
+                <input type="range" id="v-slider" min="0" max="100" value="100">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
