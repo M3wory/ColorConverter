@@ -1,36 +1,49 @@
-Документация по использованию сайта "Конвертер Цветов"
-Описание
-Веб-приложение "Конвертер Цветов" позволяет пользователю конвертировать цвета между цветовыми моделями RGB, CMYK и HSV. Оно предоставляет возможность вручную настраивать цвет через ползунки и ввод числовых значений, а также выбирать цвет через встроенный инструмент "Палитра цветов".
-Основные элементы интерфейса
-1. Палитра цветов
-•	Расположена в верхней части страницы.
-•	Представляет собой квадратную кнопку, которая отображает текущий цвет в формате HEX.
-•	Нажатие на кнопку открывает системный выбор цвета. После выбора, RGB, CMYK и HSV значения обновляются автоматически.
-2. Секция RGB
-•	Включает элементы управления для изменения значений каналов Red (R), Green (G) и Blue (B).
-•	Каждый канал имеет числовой ввод (диапазон от 0 до 255) и ползунок для визуального контроля.
-•	Изменение значений RGB автоматически пересчитывает и отображает соответствующие значения в моделях CMYK и HSV.
-3. Секция CMYK
-•	Включает элементы управления для изменения значений компонентов Cyan (C), Magenta (M), Yellow (Y) и Black (K).
-•	Каждый компонент имеет числовой ввод (диапазон от 0 до 100) и ползунок для визуального контроля.
-•	Изменение значений CMYK автоматически пересчитывает и обновляет соответствующие значения в моделях RGB и HSV.
-4. Секция HSV
-•	Включает элементы управления для изменения значений Hue (H), Saturation (S) и Value (V).
-•	Числовой ввод для Hue принимает значения от 0 до 360, для Saturation и Value — от 0 до 100.
-•	Изменение значений HSV приводит к обновлению соответствующих значений в моделях RGB и CMYK.
+# Color Converter Documentation
 
-Основные функции
-Выбор цвета через палитру
-1.	Нажмите на квадратную кнопку палитры в верхней части страницы.
-2.	Выберите цвет через системный инструмент выбора.
-3.	Цвет автоматически будет преобразован в RGB, CMYK и HSV, и соответствующие числовые значения и ползунки обновятся.
-Ручное изменение значений
-•	Для ручного изменения цвета используйте либо числовые поля ввода, либо ползунки для каждой цветовой модели (RGB, CMYK, HSV).
-•	При изменении одного из значений в одной из моделей остальные значения пересчитываются автоматически для поддержания корректной цветовой консистенции.
-Ограничения
-•	Значения вводятся только в пределах диапазонов, указанных для каждой цветовой модели:
-o	RGB: от 0 до 255.
-o	CMYK: от 0 до 100.
-o	HSV: Hue от 0 до 360, Saturation и Value от 0 до 100.
-•	Системный выбор цвета отображает HEX код, который преобразуется в RGB и затем конвертируется в CMYK и HSV.
+## Overview
 
+The **Color Converter** web application allows users to convert colors between RGB, CMYK, and HSV color models. It offers the ability to manually adjust colors via sliders and numerical inputs, as well as select colors through a built-in **Color Palette** tool.
+
+## Main Interface Elements
+
+### 1. Color Palette
+- Located at the top of the page.
+- A square button displaying the current color in HEX format.
+- Clicking the button opens the system color picker. Once a color is selected, the RGB, CMYK, and HSV values update automatically.
+
+### 2. RGB Section
+- Controls for adjusting Red (R), Green (G), and Blue (B) channels.
+- Each channel has a numerical input (range: 0 to 255) and a slider for visual adjustment.
+- Changing RGB values automatically recalculates and updates the corresponding CMYK and HSV values.
+
+### 3. CMYK Section
+- Controls for adjusting Cyan (C), Magenta (M), Yellow (Y), and Black (K) components.
+- Each component has a numerical input (range: 0 to 100) and a slider for visual adjustment.
+- Changing CMYK values automatically recalculates and updates the corresponding RGB and HSV values.
+
+### 4. HSV Section
+- Controls for adjusting Hue (H), Saturation (S), and Value (V).
+- The numerical input for Hue accepts values from 0 to 360, while Saturation and Value range from 0 to 100.
+- Changing HSV values automatically updates the corresponding RGB and CMYK values.
+
+## Key Features
+
+### Selecting a Color via the Palette
+1. Click the square palette button at the top of the page.
+2. Choose a color using the system’s color picker.
+3. The selected color will be converted into RGB, CMYK, and HSV, with the numerical values and sliders updating accordingly.
+
+### Manually Adjusting Values
+- To manually change a color, use either the numerical input fields or sliders for any of the color models (RGB, CMYK, HSV).
+- When one model's value is updated, the other models are automatically recalculated to maintain color consistency.
+
+## Limitations
+- Values are restricted to the following ranges for each color model:
+  - **RGB**: 0 to 255.
+  - **CMYK**: 0 to 100.
+  - **HSV**: Hue from 0 to 360, Saturation and Value from 0 to 100.
+- The system’s color picker outputs a HEX code, which is then converted to RGB, followed by conversion to CMYK and HSV.
+
+---
+
+This web application provides a user-friendly interface for precise color conversion and manipulation, allowing flexibility in selecting and adjusting colors across different models.
